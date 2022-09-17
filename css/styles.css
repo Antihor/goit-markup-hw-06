@@ -427,6 +427,13 @@ p {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-socials {
+  width: 206px;
+  margin-right: 93px;
 }
 .socials-title {
   font-weight: 700;
@@ -439,6 +446,7 @@ p {
   margin-bottom: 20px;
 }
 .address {
+  width: 230px;
   margin-top: 20px;
 }
 .footer-data {
@@ -585,4 +593,195 @@ p {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  }
+.form-title {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-field label {
+  margin-right: auto;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.form-field input {
+  margin: 0;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-input {
+  padding-left: 35px;
+  transition: border-color var(--animation);
+}
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+.form-input:hover + .form-icon {
+  fill: var(--accent-color);
+}
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+.form-icon {
+  margin-right: 12px;
+  transition: fill var(--animation);
+}
+.form-input:focus ~ .form-icon,
+.form-input:not(:placeholder-shown) .form-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.form-field textarea {
+  resize: none;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.form-field textarea::placeholder{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-check {
+  margin-bottom: 30px;
+}
+ .form-txt {
+  margin-bottom: 20px;
+}
+.check-txt {
+  margin-left: 7px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.check-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.box-checked {
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.box-unchecked {
+  opacity: 1;
+  transition: opacity var(--animation);
+}
+.checkbox:checked + .checkbox-icon .box-checked {
+  opacity: 1;
+}
+.checkbox:checked + .checkbox-icon .box-unchecked {
+  opacity: 0;
+}
+.form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+}
+.form-btn:hover,
+.form-btn:focus {
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left:12px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.form-footer {
+  display: flex;
+  align-items: flex-end;
+}
+.form-footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  }
+.form-footer label {
+  display: block;
+ }
+.form-footer input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: inherit;
+}
+.form-footer input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6)
+}
+.footer-btn {
+  display: inline-flex;
+  align-items:center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  padding: 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer-btn-txt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin-right: 10px;
 }
